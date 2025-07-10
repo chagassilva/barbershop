@@ -604,59 +604,130 @@ footer {
 /* Smartphones médios e tablets em modo retrato */
 @media (min-width: 480px) and (max-width: 767px) {
   /* Estilos para celulares grandes e tablets menores */
-  body {
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    margin: 40px auto;
-    padding: 0;
-    width: min-content;
-    background-color: #ffffff;
+
+  .container-home {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .service-item {
     margin: 0 auto;
   }
 
-  .working-hours{
+  .container-galery > h1 {
+    font-size: 34px;
+  }
 
+  .tall {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .working-hours {
     display: grid;
     grid-template-columns: 1fr;
-  
+    justify-content: center;
+    align-items: center;
   }
 
-   .working-hours > section{
-
-    padding: 10px;
-  
+  .working-hours > section > div > img {
+    width: 350px;
+    height: 300px;
   }
 
-  .quote-container{
+  .working-hours-item {
+    width: 350px;
+    height: auto;
+    margin: 15px;
+  }
+
+  .quote-container {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
   }
 
-    .quote-image{
-    margin: 0 auto;
+  .quote-image {
+    width: 350px;
   }
 
-  footer > section{
-    max-width: max-content;
+  .quote-text {
+    width: 350px;
+    padding: 20px 0;
   }
 
-   /* .footer-info{
-   max-width: 1220px;
-  } */
- 
+  .contacts {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .contacts2 > div > p {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  footer {
+    padding: 0 40px;
+  }
+
+  .footer-info > div > p {
+    font-size: 10px;
+    width: max-content;
+  }
 }
 
 /* Tablets e dispositivos médios (ex: iPad) */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Estilos para tablets e notebooks menores */
+
+  .container-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-galery > h1 {
+    font-size: 34px;
+  }
+
+  .tall {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+  .working-hours {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .working-hours > section > div > img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .working-hours-item {
+    width: 350px;
+    height: auto;
+    margin: 15px;
+  }
+
+   footer {
+    padding: 0 40px;
+  }
+
+  .footer-info > div > p {
+    font-size: 15px;
+    width: max-content;
+  }
+
 }
 
 /* Laptops e desktops padrão */

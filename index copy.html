@@ -103,24 +103,18 @@
       <main>
       <section class="services-container">
 
-         <div id="modal" class="modal">
-          <div class="modal-conteudo">
-            <span class="fechar" onclick="fecharModal()">&times;</span>
-            <img id="modal-img" src="" alt="">
-            <h2 id="modal-title"></h2>
-            <p id="modal-desc"></p>
-          </div>
-        </div>
-         
-        <section class="service-item">    
-                 
-          <div class="service-item-images" onclick="abrirModal()">
+        <!-- modal -->
+
+        <div class="service-item-images" onclick="abrirModal()">
             <img
               class="service-item-image-service"
               src="assets/cabelo-maquina.jpg"
               alt="Shaving"
             />
           </div>
+
+
+        <section class="service-item">        
           <div class="container-service-item-image-icon">
             <img
               class="service-item-image-icon"
@@ -131,13 +125,6 @@
           <div>
             <h3>Maquina</h3>
             <p><span>Preço:</span>R$15</p>
-            <button class="btn-servico"
-                data-img="assets/cabelo-maquina.jpg"
-                data-title="Corte Premium"
-                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
-                onclick="abrirModal(this)">
-                Detalhe <i class="fa-regular fa-eye"></i>
-            </button>
           </div>        
         </section>
 
@@ -160,13 +147,6 @@
           <div>
             <h3>Maquina</h3>
             <p><span>Preço:</span>R$15</p>
-            <button class="btn-servico"
-                data-img="assets/cabelo-maquina.jpg"
-                data-title="Corte Premium"
-                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
-                onclick="abrirModal(this)">
-                Detalhe <i class="fa-regular fa-eye"></i>
-            </button>
           </div>
         </section>
 
@@ -188,13 +168,6 @@
           <div>
             <h3>Maquina</h3>
             <p><span>Preço:</span>R$15</p>
-            <button class="btn-servico"
-                data-img="assets/cabelo-maquina.jpg"
-                data-title="Corte Premium"
-                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
-                onclick="abrirModal(this)">
-                Detalhe <i class="fa-regular fa-eye"></i>
-            </button>
           </div>
         </section>
 
@@ -216,13 +189,6 @@
           <div>
             <h3>Navalhado</h3>
             <p><span>Preço:</span>R$25</p>
-            <button class="btn-servico"
-                data-img="assets/cabelo-maquina.jpg"
-                data-title="Corte Premium"
-                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
-                onclick="abrirModal(this)">
-                Detalhe <i class="fa-regular fa-eye"></i>
-            </button>
           </div>
         </section>
        
@@ -386,6 +352,5 @@
       </div>
       </section>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

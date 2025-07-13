@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página exemplo com cabeçalho, navegação e rodapé."
+    />
+    <meta name="keywords" content="exemplo, página, HTML, cabeçalho" />
+    <meta name="author" content="Thiago Lucas" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,800;1,400;1,700&family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbearia - El santiago</title>
+  </head>
+
+  <header>
+    <div class="logo">
+      <a href="/">
+        <img
+          src="assets/logo-barbearia.png"
+          alt="Logo da Empresa"
+          width="44px"
+        />
+      </a>
+    </div>
+
+    <!-- Menu central -->
+    <div>
+      <nav class="menu-central">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a>
+        <a href="#"><i class="fas fa-info-circle"></i> Sobre</a>
+      </nav>
+    </div>
+
+    <!-- Redes sociais lado direito -->
+    <div class="redes-sociais">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <body>
+    <main class="container-main">
+    <main class="container-home">
+      <section>
+        <div>
+          <h1>
+            Deixar você<br /><span>Bonito!</span> é a<br />
+            nossa meta
+          </h1>
+          <p>Aqui você encontrará informações sobre nossos serviços.</p>
+        </div>
+
+        <div class="buttons">
+          <button class="btn-primary">Saiba Mais</button>
+          <button class="btn-secondary">Contato</button>
+        </div>
+      </section>
+
+      <section class="banner">
+        <div></div>
+      </section>
+    </main>
+
+      <main class="container-experience">
+        <section class="about">
+       <h2><span class="year-10">10</span></br>anos</br> de Experiência</h2>
+        </section>
+        <section class="services">
+          <h3>Quem sou eu</h3>
+          <p>
+            Somos uma empresa dedicada a fornecer os melhores serviços para
+            nossos clientes. Nossa missão é oferecer qualidade e excelência em
+            tudo o que fazemos.
+          </p>
+          <button class="btn-about">Saiba Mais</button>
+        </section>
+      </main>
+
+      <main>
+      <section class="our-services">
+      <h2>Nossos Serviços</h2>
+      <p>
+        Estamos dedicados a lhe proporcionar a melhor experiência possível.
+        Nossa equipe de especialistas está aqui para ajudar você<br /> em cada etapa
+        do processo, desde a escolha do serviço certo até o final.
+      </p>
+
+      <main>
+      <section class="services-container">
+
+         <div id="modal" class="modal">
+          <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+          </div>
+        </div>
+         
+        <section class="service-item">    
+                 
+          <div class="service-item-images" onclick="abrirModal()">
+            <img
+              class="service-item-image-service"
+              src="assets/cabelo-maquina.jpg"
+              alt="Shaving"
+            />
+          </div>
+          <div class="container-service-item-image-icon">
+            <img
+              class="service-item-image-icon"
+              src="assets/maquina-de-cortar-cabelo.png"
+              alt="Shaving"
+            />
+          </div>
+          <div>
+            <h3>Maquina</h3>
+            <p><span>Preço:</span>R$15</p>
+            <button class="btn-servico"
+                data-img="assets/cabelo-maquina.jpg"
+                data-title="Corte Premium"
+                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
+                onclick="abrirModal(this)">
+                Detalhe <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>        
+        </section>
+
+
+        <section class="service-item">
+          <div class="service-item-images">
+            <img
+              class="service-item-image-service"
+              src="assets/corte-barba.jpg"
+              alt="Shaving"
+            />
+          </div>
+          <div class="container-service-item-image-icon">
+            <img
+              class="service-item-image-icon"
+              src="assets/penteado.png"
+              alt="Shaving"
+            />
+          </div>
+          <div>
+            <h3>Maquina</h3>
+            <p><span>Preço:</span>R$15</p>
+            <button class="btn-servico"
+                data-img="assets/cabelo-maquina.jpg"
+                data-title="Corte Premium"
+                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
+                onclick="abrirModal(this)">
+                Detalhe <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="service-item">
+          <div class="service-item-images">
+            <img
+              class="service-item-image-service"
+              src="assets/corte-tesoura.jpg"
+              alt="Shaving"
+            />
+          </div>
+          <div class="container-service-item-image-icon">
+            <img
+              class="service-item-image-icon"
+              src="assets/tesoura-e-pente.png"
+              alt="Shaving"
+            />
+          </div>
+          <div>
+            <h3>Maquina</h3>
+            <p><span>Preço:</span>R$15</p>
+            <button class="btn-servico"
+                data-img="assets/cabelo-maquina.jpg"
+                data-title="Corte Premium"
+                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
+                onclick="abrirModal(this)">
+                Detalhe <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="service-item">
+          <div class="service-item-images">
+            <img
+              class="service-item-image-service"
+              src="assets/corte-navalhado.jpg"
+              alt="Shaving"
+            />
+            </div>
+            <div class="container-service-item-image-icon" >
+            <img class="service-item-image-icon"          
+              src="assets/navalha.png"
+              alt="Shaving"
+            />
+            </div>
+          </div>
+          <div>
+            <h3>Navalhado</h3>
+            <p><span>Preço:</span>R$25</p>
+            <button class="btn-servico"
+                data-img="assets/cabelo-maquina.jpg"
+                data-title="Corte Premium"
+                data-desc="Corte moderno com acabamento perfeito e produtos de qualidade."
+                onclick="abrirModal(this)">
+                Detalhe <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </section>
+       
+      </section>
+      </main>
+    </section>
+      </main>
+
+      <main class="container-galery">
+      <h1>Galeria Em Destaque</h1>
+      <section class="gallery">
+        <div class="gallery-item big">
+          <img src="/assets/cabelo-maquina.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item tall">
+          <img src="/assets/corte-barba.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item wide">
+          <img src="/assets/corte-navalhado.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item big">
+          <img src="/assets/corte-tesoura.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item wide">
+          <img src="/assets/cabelo-maquina.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/corte-barba.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="/assets/corte-navalhado.jpg" alt="Imagem 1" />
+        </div>
+        <div class="gallery-item big">
+          <img src="/assets/corte-tesoura.jpg" alt="Imagem 1" />
+        </div>
+      </section>
+    </main>
+
+    
+      <main class="working-hours">
+
+        <section>
+
+          <div>
+
+            <img src="/assets/corte-barba.jpg" alt="Nosso horario de funcionamento" />
+
+
+          </div>
+
+        </section>
+
+        <section>
+
+          <div class="working-hours-item">
+    <h1>Horário de Funcionamento</h1>
+    <p>
+      Nossos horários são flexíveis e convenientes, com consultas disponíveis no início da manhã e no final da noite.
+    </p>
+    <table>
+      <tr>
+        <th>Dias da Semana</th>
+        <th class="">Horário</th>
+      </tr>
+      <tr>
+        <td>Segunda-feira</td>
+        <td class="hours">08:00 as 18:00</td>
+      </tr>
+      <tr>
+        <td>Terça-feira</td>
+        <td class="">08:00 as 18:00</td>
+      </tr>
+      <tr>
+        <td>Quart-feira</td>
+        <td class="">Fechado</td>
+      </tr>
+      <tr>
+        <td>Quinta-feira</td>
+        <td class="">08:00 as 18:00</td>
+      </tr>
+      <tr>
+        <td>Sexta-feira</td>
+        <td class="">08:00 as 18:00</td>
+      </tr>
+      <tr>
+        <td>Sábado</td>
+        <td class="">08:00 as 18:00</td>
+      </tr>
+      <tr>
+        <td>Domingo</td>
+        <td class="">Fechado</td>
+      </tr>
+    </table>
+  </div>
+          
+        </section>
+
+      </main>
+
+    <main class="clients">
+      <section>
+    <div class="quote-container">
+    <div class="quote-image">
+      <img src="assets/client.jfif" alt="Adam Smith">
+    </div>
+    <div class="quote-text">
+      <h2>O cliente diz</h2>
+      <p>Barbers corta cabelos com cuidado e atenção aos detalhes. Sua expertise e profissionalismo são evidentes na abordagem criteriosa ao corte. Com seu conhecimento e experiência, eles oferecem cortes de cabelo de primeira qualidade que deixam os clientes confiantes e satisfeitos.</p>
+      <p>-Adam Smith</p>
+    </div>
+  </div>
+  </section>
+  </main>
+
+  <main class="info">
+
+    <section class="contacts2">
+        <div>
+        <img src="assets/logo-barbearia.png" />
+        <p>Barbershop é uma equipe de profissionais apaixonados e experientes, dedicados a fornecer as ferramentas de modelagem de cabelo da mais alta qualidade do mercado</p>
+        </div>
+      </section>
+
+  <section class="contacts">
+
+    <div>
+
+      <h1>Contatos</h1>
+      <span class="contacts-icon"><a href="https://wa.me/8499575440" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></span>
+      <span class="contacts-icon"><a href="https://maps.app.goo.gl/6AMcQ5sFnERjQk2B7" target="_blank"><i class="fas fa-map-marker-alt"></i> Localização</a></span>
+      <span class="contacts-icon"><a href="mailto:seuemail@gmail.com"><i class="fas fa-envelope"></i> Email</a></span>
+
+
+   
+  </section>
+
+</main>
+
+<main>
+  <section>
+     <div class="redes-sociais-info">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+  </section>
+</main>
+
+</main>
+
+
+    <footer>
+
+      <section class="footer-info">
+      <div>
+      <p>Temos e Privacidade</p>
+      </div>
+      <div>
+      <p>Todos os direitos reservados @ <time datetime="2025">2025 | Barbershop</time></p>
+      </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

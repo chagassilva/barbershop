@@ -1,0 +1,93 @@
+
+.logo {
+  display: flex;
+  justify-content: start;
+  padding: 0 23px;
+}
+
+.menu-central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-central a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+}
+
+.menu-central a:hover {
+  color: #3d3d3d;
+  transition: all;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-self: end;
+  gap: 10px;
+  padding: 0 23px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+}
+
+.redes-sociais a:hover {
+  color: #e1306c; /* cor base Instagram, ou personalize */
+}
+
+
+.btn-mainmenu {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #15151527;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.btn-agendamento {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  animation: pulse 1.5s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .btn-agendamento i {
+  font-size: 12px;
+} */
+
+.btn-agendamento:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 77, 77, 0.8);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(255, 77, 77, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
+  }
+}

@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="scrollTop.css" />
+    <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="responsividade.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +23,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="script.js" defer></script>
     <title>Barbearia - El Santiago</title>
   </head>
   <body>
@@ -37,9 +38,31 @@
         /></a>
       </div>
       <nav class="menu-central">
-        <a href="#"><i class="fas fa-home"></i> Home</a>
-        <a href="#"><i class="fas fa-concierge-bell"></i> Serviços</a>
-        <a href="#"><i class="fas fa-info-circle"></i> Sobre</a>
+        <a href="/" class="btn-mainmenu">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+
+        <a href="#services" class="btn-mainmenu"
+          ><i class="fas fa-concierge-bell"></i> Serviços</a
+        >
+
+        <a href="#funcionamento" class="btn-mainmenu"
+          ><i class="fas fa-concierge-bell"></i> Funcionamento</a
+        >
+
+        <a href="#sobre" class="btn-mainmenu"
+          ><i class="fas fa-info-circle"></i> Sobre</a
+        >
+
+        <a href="#depoimentos" class="btn-mainmenu"
+          ><i class="fas fa-info-circle"></i> Depoimentos</a
+        >
+
+        <a href="#agd" class="btn-agendamento">
+          <i class="fa-brands fa-servicestack"></i>
+          Agendamento
+        </a>
       </nav>
       <div class="redes-sociais">
         <a href="https://www.instagram.com/" target="_blank"
@@ -56,7 +79,7 @@
 
     <main class="container-main">
       <section class="container-home">
-        <div>
+        <div class="container-items-left">
           <h1>Deixar você<br /><span>Bonito!</span> é a<br />nossa meta</h1>
           <p>Aqui você encontrará informações sobre nossos serviços.</p>
           <div class="buttons">
@@ -64,10 +87,11 @@
             <button class="btn-secondary">Contato</button>
           </div>
         </div>
+
         <div class="banner"></div>
       </section>
 
-      <section class="container-experience">
+      <section id="sobre" class="container-experience">
         <article class="about">
           <h2><span class="year-10">10</span><br />anos<br />de Experiência</h2>
         </article>
@@ -81,7 +105,7 @@
         </article>
       </section>
 
-      <section class="our-services">
+      <section id="services" class="our-services">
         <h2>Nossos Serviços</h2>
         <p>
           Estamos dedicados a lhe proporcionar a melhor experiência possível.
@@ -227,15 +251,15 @@
           <div class="gallery-item big">
             <img src="/assets/cabelo-maquina.jpg" alt="Imagem 1" />
           </div>
-           <div class="gallery-item wide">
+          <div class="gallery-item wide">
             <img src="/assets/corte-navalhado.jpg" alt="Imagem 3" />
-          </div> 
+          </div>
           <div class="gallery-item tall">
             <img src="/assets/corte-barba.jpg" alt="Imagem 2" />
           </div>
           <div class="gallery-item tall">
             <img src="/assets/corte-navalhado.jpg" alt="Imagem 3" />
-          </div>       
+          </div>
           <div class="gallery-item wide">
             <img src="/assets/corte-barba.jpg" alt="Imagem 2" />
           </div>
@@ -246,7 +270,7 @@
         </div>
       </section>
 
-      <section class="working-hours">
+      <section id="funcionamento" class="working-hours">
         <div>
           <img src="/assets/corte-barba.jpg" alt="Horário de funcionamento" />
         </div>
@@ -294,7 +318,11 @@
         </div>
       </section>
 
-      <section class="clients">
+      <section id="agd" class="agd-iframe">
+        <iframe src="http://localhost:5173" frameborder="0"></iframe>
+      </section>
+
+      <section id="depoimentos" class="clients">
         <article class="quote-container">
           <div class="quote-image">
             <img src="assets/client.jfif" alt="Adam Smith" />
@@ -352,7 +380,9 @@
         </div>
       </section>
     </main>
-
+    <button id="scrollTopBtn" title="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
     <footer>
       <section class="footer-info">
         <div><p>Temos e Privacidade</p></div>
@@ -364,5 +394,7 @@
         </div>
       </section>
     </footer>
+    <script src="script.js"></script>
+    <script src="scrollTop.js"></script>
   </body>
 </html>

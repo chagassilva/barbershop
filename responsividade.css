@@ -346,57 +346,6 @@
   }
 }
 
-
-  /* Monitores maiores */
-
-/* @media (min-width: 480px) and (max-width: 767px) {
-
-  body{
-
-     width: auto;
-    margin: 10px auto;
-  }
-
-  .container-main{
-
-      width: 100vw;
-    margin: 0 auto;
-    padding: 0 auto;
-
-  }
-  .container-home {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 0;
-  }
-
-  .banner {
-    height: 250px;
-  }
-
-  .service-item {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .services-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-central a {
-    font-size: 14px;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 1rem;
-  }
-} */
-
 /* ---------- Tablets e notebooks pequenos ---------- */
 @media (min-width: 768px) and (max-width: 1023px) {
   .container-home {
@@ -416,7 +365,7 @@
   }
 
   .menu-central a {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -437,7 +386,7 @@
   }
 
   .menu-central a {
-    font-size: 16px;
+    font-size: 14x;
   }
 }
 
@@ -456,7 +405,7 @@
   }
 
   .menu-central a {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
@@ -475,6 +424,6 @@
   }
 
   .menu-central a {
-    font-size: 18px;
+    font-size: 14px;
   }
 }

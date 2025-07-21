@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="scrollTop.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="responsividade.css" />
+     <link rel="stylesheet" href="menuhamburger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,12 +32,13 @@
     <header>
       <div class="logo">
         <a href="/"
-          ><img
-            src="assets/barber_logo.png"
-            alt="Logo da Empresa"
-            width="60px"
+          ><img src="assets/barber_logo.png" alt="Logo da Empresa" width="60px"
         /></a>
       </div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+
       <nav class="menu-central">
         <a href="/" class="btn-mainmenu">
           <i class="fas fa-home"></i>
@@ -59,7 +61,11 @@
           ><i class="fas fa-info-circle"></i> Depoimentos</a
         >
 
-        <a href="https://calendar.chagassilva.com" target="_blank" class="btn-agendamento">
+        <a
+          href="https://calendar.chagassilva.com"
+          target="_blank"
+          class="btn-agendamento"
+        >
           <i class="fa-brands fa-servicestack"></i>
           Agendamento
         </a>
@@ -249,22 +255,40 @@
         <h1>Galeria Em Destaque</h1>
         <div class="gallery">
           <div class="gallery-item big">
-            <img src="https://img.freepik.com/fotos-gratis/barbeiro-raspa-um-homem-barbudo-em-atmosfera-vintage_1153-7903.jpg" alt="Imagem 1" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/barbeiro-raspa-um-homem-barbudo-em-atmosfera-vintage_1153-7903.jpg"
+              alt="Imagem 1"
+            />
           </div>
           <div class="gallery-item wide">
-            <img src="https://img.freepik.com/fotos-gratis/barbeiro-colocando-capa-no-pescoco-do-cliente_107420-94792.jpg" alt="Imagem 3" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/barbeiro-colocando-capa-no-pescoco-do-cliente_107420-94792.jpg"
+              alt="Imagem 3"
+            />
           </div>
           <div class="gallery-item tall">
-            <img src="https://img.freepik.com/fotos-gratis/close-up-de-um-barbeiro-aparando-barba-homem-com-eletrico-aparador_23-2147839789.jpg" alt="Imagem 2" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/close-up-de-um-barbeiro-aparando-barba-homem-com-eletrico-aparador_23-2147839789.jpg"
+              alt="Imagem 2"
+            />
           </div>
           <div class="gallery-item tall">
-            <img src="https://img.freepik.com/fotos-gratis/barba-de-estilo-barbeiro-do-homem_23-2147778882.jpg" alt="Imagem 4" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/barba-de-estilo-barbeiro-do-homem_23-2147778882.jpg"
+              alt="Imagem 4"
+            />
           </div>
           <div class="gallery-item wide">
-            <img src="https://img.freepik.com/fotos-gratis/barba-do-homem-de-corte-de-barbeiro-com-navalha_23-2147839849.jpg" alt="Imagem 5" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/barba-do-homem-de-corte-de-barbeiro-com-navalha_23-2147839849.jpg"
+              alt="Imagem 5"
+            />
           </div>
           <div class="gallery-item big">
-            <img src="https://img.freepik.com/fotos-gratis/homem-plus-size-de-tiro-medio-trabalhando-como-cabeleireiro_23-2150754700.jpg" alt="Imagem 3" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/homem-plus-size-de-tiro-medio-trabalhando-como-cabeleireiro_23-2150754700.jpg"
+              alt="Imagem 3"
+            />
           </div>
           <!-- continue a galeria -->
         </div>
@@ -272,7 +296,10 @@
 
       <section id="funcionamento" class="working-hours">
         <div>
-          <img src="https://img.freepik.com/fotos-gratis/homem-bonito-a-cortar-a-barba-num-barbeiro_1303-20967.jpg" alt="Horário de funcionamento" />
+          <img
+            src="https://img.freepik.com/fotos-gratis/homem-bonito-a-cortar-a-barba-num-barbeiro_1303-20967.jpg"
+            alt="Horário de funcionamento"
+          />
         </div>
         <div class="working-hours-item">
           <h1>Horário de Funcionamento</h1>
@@ -321,7 +348,10 @@
       <section id="depoimentos" class="clients">
         <article class="quote-container">
           <div class="quote-image">
-            <img src="https://img.freepik.com/fotos-gratis/um-homem-loiro-atraente-vestido-de-terno-sobre-fundo-cinza-escuro_613910-14130.jpg" alt="Adam Smith" />
+            <img
+              src="https://img.freepik.com/fotos-gratis/um-homem-loiro-atraente-vestido-de-terno-sobre-fundo-cinza-escuro_613910-14130.jpg"
+              alt="Adam Smith"
+            />
           </div>
           <div class="quote-text">
             <h2>O cliente diz</h2>
@@ -392,5 +422,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="scrollTop.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

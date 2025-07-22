@@ -1,7 +1,10 @@
 /* Estilização básica */
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-content: center;
+  max-width: 1300px;
 }
 
 /* Oculta o botão no desktop */
@@ -17,12 +20,16 @@ header {
 .redes-sociais {
   display: flex;
   gap: 10px;
+  width: 30%;
+  justify-content: end;
+  align-items: end;
 }
 
 /* Menu principal */
 .menu-central {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  width: 100%;
 }
 
 /* Responsivo */

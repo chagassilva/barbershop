@@ -12,13 +12,6 @@
   height: 60px;
 }
 
-.menu-central {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 .menu-central a {
   text-decoration: none;
   color: #1d1d1d;

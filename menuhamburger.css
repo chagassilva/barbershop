@@ -55,8 +55,9 @@ header {
   }
 }
 
-@media (max-width: 481px) {
-  .menu-central {
+@media (min-width: 481px) and (max-width: 660px) {
+
+     .menu-central {
     display: none;
     position: absolute;
     top: 80px;
@@ -65,25 +66,32 @@ header {
     background-color: #bea57c;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+    margin-top: 40px;
+  }
+
+  .menu-central.active {
+    display: flex;
   }
 
   .hamburger {
     display: block;
     color: #151515;
-    align-items: flex-start;
-    justify-content: start;
+  }
+
+  .redes-sociais {
+    display: none;
   }
 
   header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 25px;
-  }
+}
 
-  .logo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-  }
+.container-scrollTopBtn{
+display: none;
+}
+
 }

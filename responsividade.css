@@ -90,7 +90,7 @@
 @media (max-width: 767px) {
   .container-home {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr;
     gap: 30px;
     padding: 15px 0;
   }
@@ -162,7 +162,101 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 481px) and (max-width: 660px) {
+
+  .container-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+   /* .banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  } */
+
+  .service-item {
+    max-width: 450px;
+  }
+
+  .container-galery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wide {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .working-hours {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .working-hours-item {
+    width: 350px;
+    height: auto;
+    margin: 15px;
+  }
+
+  .working-hours img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .quote-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote-image {
+    width: 350px;
+  }
+
+  .quote-text {
+    width: 350px;
+    padding: 20px 0;
+  }
+
+  .contacts {
+    justify-content: end;
+    align-items: center;
+  }
+
+  .contacts2 > div > p {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  footer {
+    padding: 0 40px;
+  }
+
+  .footer-info p {
+    font-size: 10px;
+    width: max-content;
+  }
+}
+
+@media (width: 767px) {
+
+ .container-items-left{
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+
+}
+
+
+@media (width: 1023px) {
   .container-home {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -266,89 +360,7 @@
 
 }
 
-@media (min-width: 481px) and (max-width: 660px) {
 
-  .container-home {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-   .banner {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-  }
-
-  .service-item {
-    width: 400px;
-  }
-
-  .container-galery {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .wide {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .working-hours {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .working-hours-item {
-    width: 350px;
-    height: auto;
-    margin: 15px;
-  }
-
-  .working-hours img {
-    width: 350px;
-    height: 300px;
-  }
-
-  .quote-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .quote-image {
-    width: 350px;
-  }
-
-  .quote-text {
-    width: 350px;
-    padding: 20px 0;
-  }
-
-  .contacts {
-    justify-content: end;
-    align-items: center;
-  }
-
-  .contacts2 > div > p {
-    font-size: 15px;
-    font-weight: 100;
-    font-style: normal;
-  }
-
-  footer {
-    padding: 0 40px;
-  }
-
-  .footer-info p {
-    font-size: 10px;
-    width: max-content;
-  }
-}
 
 /* ---------- Tablets e notebooks pequenos ---------- */
 @media (min-width: 768px) and (max-width: 1023px) {
